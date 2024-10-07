@@ -1,0 +1,22 @@
+footer {
+    width: 100%; /* Full width to span across the entire page */
+    position: fixed;
+    bottom: 0;
+    background-color: #005bbb; /* Same blue color code as the header */
+    color: white;
+    padding: 10px 0; /* Padding at top and bottom to create space */
+    z-index: 1000; /* Ensure the footer stays above other content */
+}
+
+.footer-container {
+    width: 90%; /* Restrict the width of the footer content */
+    max-width: 1200px; /* Restrict the maximum width */
+    margin: 0 auto; /* Center the container within the footer */
+    text-align: center; /* Center the text horizontally */
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+footer p {
+    margin: 0; /* Remove default paragraph margin */
+}

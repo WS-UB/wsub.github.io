@@ -1,0 +1,125 @@
+---
+layout: default
+title: "People"
+permalink: /people/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wireless Systems@UB - People</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research Lab, Home, University at Buffalo">
+    <meta name="author" content="Sai Bharadwaj Sirigadi">
+    <meta name="keywords" content="wireless systems, UB, robotics, SLAM, localization">
+    <!-- Styles -->
+    <link href="{{ 'assets/css/people.css' | relative_url }}" rel="stylesheet">
+</head>
+
+<div class="container">
+
+    <!-- Main Content Section -->
+    <div class="content-section">
+        <!-- Principal Investigator Section -->
+        <section id="principalinvestigator">
+            <div class="page-header">
+                <h3>Principal Investigator</h3>
+            </div>
+            {% for pi in site.data.people.principal_investigator %}
+            <div class="person-item">
+                {% if pi.image_url %}
+                <div class="thumbnail-container">
+                    <a href="{{ pi.image_url }}" class="thumbnail">
+                        <img class="publications-thumb" src="{{ pi.image_url }}" alt="{{ pi.name }}">
+                    </a>
+                </div>
+                {% endif %}
+                <div class="person-details">
+                    <h4>{{ pi.name }}</h4>
+                    <p>{{ pi.title }}</p>
+                    <p>{{ pi.degrees }}</p>
+                    <p><b>Phone: </b>{{ pi.phone }}</p>
+                    <p><b>Email: </b><a href="mailto:{{ pi.email }}">{{ pi.email }}</a></p>
+                    <p><b>Address: </b>{{ pi.address }}</p>
+                    <p>
+                        <b>
+                            {% if pi.cv %}<a href="{{ pi.cv }}">CV</a>{% endif %}
+                            {% if pi.google_scholar %}, <a href="{{ pi.google_scholar }}">Google Scholar</a>{% endif %}
+                            {% if pi.linkedin %}, <a href="{{ pi.linkedin }}">LinkedIn</a>{% endif %}
+                            {% if pi.researchgate %}, <a href="{{ pi.researchgate }}">ResearchGate</a>{% endif %}
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            {% endfor %}
+        </section>
+
+        <!-- Ph.D. Students Section -->
+        <section id="phd">
+            <div class="page-header">
+                <h3>Ph.D Students</h3>
+            </div>
+            {% for phd_student in site.data.people.phd_students %}
+            <div class="person-item">
+                {% if phd_student.image_url %}
+                <div class="thumbnail-container">
+                    <img class="grad-thumb" src="{{ phd_student.image_url | relative_url }}" alt="{{ phd_student.name }}">
+                </div>
+                {% endif %}
+                <div class="person-details">
+                    <h4><a href="{{ phd_student.profile_url }}">{{ phd_student.name }}</a></h4>
+                    <p><b>Email: </b><a href="mailto:{{ phd_student.email }}">{{ phd_student.email }}</a></p>
+                    <p><b>Address: </b>{{ phd_student.address }}</p>
+                </div>
+            </div>
+            <hr>
+            {% endfor %}
+        </section>
+
+        <!-- Graduate Students Section -->
+        <section id="graduate">
+            <div class="page-header">
+                <h3>Graduate Students</h3>
+            </div>
+            {% for grad_student in site.data.people.graduate_students %}
+            <div class="person-item">
+                {% if grad_student.image_url %}
+                <div class="thumbnail-container">
+                    <img class="grad-thumb" src="{{ grad_student.image_url | relative_url }}" alt="{{ grad_student.name }}">
+                </div>
+                {% endif %}
+                <div class="person-details">
+                    <h4><a href="{{ grad_student.profile_url }}">{{ grad_student.name }}</a></h4>
+                    <p>{{ grad_student.bio }}</p>
+                    <p><b>Email: </b><a href="mailto:{{ grad_student.email }}">{{ grad_student.email }}</a></p>
+                </div>
+            </div>
+            <hr>
+            {% endfor %}
+        </section>
+
+        <!-- Undergraduate Students Section -->
+        <section id="undergraduate">
+            <div class="page-header">
+                <h3>Undergraduate Students</h3>
+            </div>
+            {% for undergrad_student in site.data.people.undergraduate_students %}
+            <div class="person-item">
+                {% if undergrad_student.image_url %}
+                <div class="thumbnail-container">
+                    <img class="grad-thumb" src="{{ undergrad_student.image_url | relative_url }}" alt="{{ undergrad_student.name }}">
+                </div>
+                {% endif %}
+                <div class="person-details">
+                    <h4>{{ undergrad_student.name }}</h4>
+                    <p>{{ undergrad_student.bio }}</p>
+                    <p><b>Email: </b><a href="mailto:{{ undergrad_student.email }}">{{ undergrad_student.email }}</a></p>
+                </div>
+            </div>
+            <hr>
+            {% endfor %}
+        </section>
+
+    </div>
+</div>

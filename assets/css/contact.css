@@ -1,0 +1,90 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Content Section Styling */
+.content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Map Section Styling */
+.map-section {
+    flex: 2;
+    min-width: 300px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info Styling */
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box_cont h3,
+.box_cont h4 {
+    color: #005bbb;
+    margin-bottom: 10px;
+}
+
+.box_cont p {
+    margin-bottom: 10px;
+}
+
+.box_cont a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #005bbb;
+    text-decoration: none;
+}
+
+.box_cont a:hover {
+    text-decoration: underline;
+}
+
+.box_cont hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .map-frame {
+        height: 250px;
+    }
+}

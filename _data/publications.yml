@@ -1,0 +1,15 @@
+journals:
+  - title: "Just a Test"
+    authors: "Rohith Reddy Vennam, Ish Kumar Jain"
+    citation: "Journal XYZ, 2018"
+    thumbnail: "assets/images/davis_hall/davis_hall1.png"
+    detail_page_url: "/publications/mmSubArray"
+
+conferences:
+  - title: "Just a Test"
+    authors: "Rohith Reddy Vennam, Ish Kumar Jain"
+    citation: "Journal XYZ, 2018"
+    thumbnail: "assets/images/davis_hall/davis_hall1.png"
+    detail_page_url: "/publications/mmSubArray"
+  
+

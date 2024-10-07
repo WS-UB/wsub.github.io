@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wireless Systems@UB</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research Lab, Home, University at Buffalo">
+    <meta name="author" content="Sai Bharadwaj Sirigadi">
+    <meta name="keywords" content="wireless systems, UB, robotics, SLAM, localization">
+    <!-- Styles -->
+    <link href="{{ 'assets/css/header.css' | relative_url }}" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="{{ 'assets/images/201-Interlocking-UB-RGB-White.png' | relative_url }}" alt="UB Logo" class="ub-logo">
+                    <p>Wireless Systems@UB</p>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Unicode for the hamburger icon -->
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/people/' | relative_url }}">People</a></li>
+                <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+                <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+                <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+            </ul>            
+        </div>
+    </nav>
+    <!-- JavaScript for menu toggle -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

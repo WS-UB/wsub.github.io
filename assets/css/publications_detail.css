@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling for Font */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container and Content Styling */
+.container {
+    max-width: 1200px; /* Constrain the entire page width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-container {
+    max-width: 900px; /* Constrain the content width */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center the content text where applicable */
+}
+
+/* Title Section */
+.title-section h1 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #005bbb;
+    text-align: center; /* Center the title */
+}
+
+/* Table-Like Flexbox Layout for Author and Links Section */
+.table-like {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.author-info .author, .links-section .link {
+    text-align: center;
+    padding: 10px;
+}
+
+.author p {
+    font-size: 18px;
+    color: #333; /* Standard text color */
+}
+
+.author p a {
+    text-decoration: none;
+    color: #1367a7;
+    font-weight: bold;
+}
+
+.author p a:hover {
+    text-decoration: underline;
+    color: #003366;
+}
+
+.link a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1367a7;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* Publication Site Info */
+.publication-info-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #005bbb;
+    margin: 20px 0;
+    text-align: center; /* Center publication site name */
+}
+
+.publication-link {
+    color: #2300d0cd !important;
+    text-decoration: none;
+}
+
+.publication-link:hover {
+    text-decoration: underline;
+    color: #1367a7;
+}
+
+/* Video Section */
+.video-section {
+    margin: 40px 0;
+    text-align: center; /* Center the video */
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 768px; /* Constrain the width of the video */
+    height: auto;
+    aspect-ratio: 16/9; /* Keep the video aspect ratio consistent */
+}
+
+/* Abstract and Conclusion Sections */
+.abstract-section, .conclusion-section {
+    max-width: 800px;
+    margin: 20px auto; /* Reduced margin to decrease space before Abstract and Conclusion */
+    text-align: justify;
+    font-size: 15px;
+    color: #333; /* Consistent text color */
+}
+
+.abstract-section h3, .conclusion-section h3 {
+    text-align: center;
+    color: #005bbb;
+    font-weight: 700;
+    margin-bottom: 10px; /* Reduced space below headers */
+}
+
+/* Image Section */
+.image-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-section img {
+    width: 50%;
+    max-width: 800px; /* Constrain the max width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Divider Styling */
+.custom-divider {
+    width: 95%;
+    margin: 10px auto;
+    border: none;
+    border-top: 1px solid #005bbb; /* Consistent blue divider */
+}
+
+/* Extra Margin for Sections */
+.extra-margin {
+    margin-bottom: 30px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 10px;
+    }
+
+    .title-section h1 {
+        font-size: 28px;
+    }
+
+    .table-like {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-section iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .abstract-section, .conclusion-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-section img {
+        width: 90%;
+    }
+}

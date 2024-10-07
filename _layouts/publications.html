@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wireless Systems@UB - Publications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research Lab, Home, University at Buffalo">
+    <meta name="author" content="Sai Bharadwaj Sirigadi">
+    <meta name="keywords" content="wireless systems, UB, robotics, SLAM, localization">
+    <!-- Styles -->
+    <link href="{{ 'assets/css/publications.css' | relative_url }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Content Section -->
+        <div class="content-section">
+            <!-- Journal Publications Section -->
+            <section id="journal">
+                <div class="page-header">
+                    <h3>Journal Publications</h3>
+                </div>
+                {% for publication in site.data.publications.journals %}
+                <div class="publication-item">
+                    <div class="thumbnail-container">
+                        {% if publication.thumbnail %}
+                        <a href="{{ publication.detail_page_url | relative_url }}" class="thumbnail">
+                            <img class="publications-thumb" src="{{ publication.thumbnail | relative_url }}" alt="{{ publication.title }}">
+                        </a>
+                        {% endif %}
+                    </div>
+                    <div class="publication-details">
+                        <h4><a href="{{ publication.detail_page_url | relative_url }}">{{ publication.title }}</a></h4>
+                        <p>{{ publication.authors }}</p>
+                        <p>{{ publication.citation }}</p>
+                    </div>
+                </div>
+                <hr>
+                {% endfor %}
+            </section>
+
+            <!-- Conference Papers Section -->
+            <section id="conference">
+                <div class="page-header">
+                    <h3>Conference Papers</h3>
+                </div>
+                {% for publication in site.data.publications.conferences %}
+                <div class="publication-item">
+                    <div class="thumbnail-container">
+                        {% if publication.thumbnail %}
+                        <a href="{{ publication.detail_page_url | relative_url }}" class="thumbnail">
+                            <img class="publications-thumb" src="{{ publication.thumbnail | relative_url }}" alt="{{ publication.title }}">
+                        </a>
+                        {% endif %}
+                    </div>
+                    <div class="publication-details">
+                        <h4><a href="{{ publication.detail_page_url | relative_url }}">{{ publication.title }}</a></h4>
+                        <p>{{ publication.authors }}</p>
+                        <p>{{ publication.citation }}</p>
+                    </div>
+                </div>
+                <hr>
+                {% endfor %}
+            </section>
+        </div>
+    </div>
+</body>
+</html>

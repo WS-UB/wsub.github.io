@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+/* Carousel Section */
+.carousel-container {
+    max-width: 80%;
+    margin: 60px auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#main-carousel {
+    width: 100%;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel-item {
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-image {
+    width: auto;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+/* Carousel Caption */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 60%;
+    margin: 0 auto;
+    bottom: 20px;
+    text-align: center;
+}
+
+/* About Lab Section */
+.about-container {
+    max-width: 1000px; /* Limit the width of the About Lab section */
+    margin: 0 auto; /* Center the container */
+    padding: 0px;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-text h2 {
+    font-weight: bold;
+    color: #005bbb;
+    margin-bottom: 15px;
+}
+
+/* General Styling for Headings and HR */
+h2 {
+    color: #005bbb;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #005bbb;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Footer Margin to Prevent Overlap */
+body {
+    margin-bottom: 50px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 90%;
+        margin: 40px auto;
+    }
+
+    .carousel-image {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        font-size: 0.9em;
+        max-width: 80%;
+    }
+
+    .about-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .intro-text {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    hr {
+        width: 90%;
+        margin: 15px auto;
+    }
+}

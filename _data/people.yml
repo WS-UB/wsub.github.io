@@ -1,0 +1,36 @@
+principal_investigator:
+  - name: "Sai Roshan Ayyalasomayajula"
+    title: "Assistant Professor of Computer Science and Engineering"
+    degrees: "Ph.D. in Signal and Image Processing, University of California San Diego, 2023, M.S. in Electrical and Computer Engineering, University of California San Diego, 2019, B.Tech in Electronics and Communication Engineering, IIT Roorkee, 2016"
+    phone: "716-645-1590"
+    email: "roshana@buffalo.edu"
+    address: "13I Davis Hall, Buffalo, NY, USA 14260-2500"
+    image_url: "https://engineering.buffalo.edu/content/shared/engineering/computer-science-engineering/profiles/faculty/ladder/ayyalasomayajula-roshan/jcr:content/profileinfo.img.280.280.z.q65.jpg/1707945184372.jpg"
+    cv: "https://www.acsu.buffalo.edu/~roshana/assets/pdf/Roshan_CV.pdf"
+    google_scholar: "https://scholar.google.com/citations?user=j1BjHf0AAAAJ&hl=en"
+    linkedin: "https://www.linkedin.com/in/roshan-ayyalasomayajula/"
+    researchgate: "https://www.researchgate.net/profile/Roshan-Ayyalasomayajula"
+
+phd_students:
+  - name: "Tahsin Fuad Hasan"
+    email: "tahsinfu@buffalo.edu"
+    address: "202 Davis Hall Desk 01, University at Buffalo"
+
+  - name: "Long Duong"
+    email: "ngoclong@buffalo.edu"
+    address: "106 Davis Hall Desk 12, University at Buffalo"
+
+graduate_students:
+  - name: "Sai Bharadwaj Sirigadi"
+    bio: "Bharadwaj received his M.Sc in Robotics from University at Buffalo in 2024. His current research focuses on localization of Small Scale Robots."
+    email: "ssirigad@buffalo.edu"
+    profile_url: "https://bharadwajsirigadi.com"
+    image_url: "https://bharadwajsirigadi.com/assets/img/prof_pic.jpg"
+
+  - name: "Shreyas Athreya Venkatesh"
+    email: "venkate7@buffalo.edu"
+
+undergraduate_students:
+  - name: "Dharmi Vipesh Khadela"
+    bio: "Dharmi is pursuing a Bachelor's degree in Computer Science at University at Buffalo. Her research focuses on synchronizing WiFi messages with IMU data from an Android phone."
+    email: "dharmikh@buffalo.edu"

@@ -1,0 +1,100 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wireless Systems@UB - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research Lab, Home, University at Buffalo">
+    <meta name="author" content="Sai Bharadwaj Sirigadi">
+    <meta name="keywords" content="wireless systems, UB, robotics, SLAM, localization">
+    <!-- Styles -->
+    <link href="{{ 'assets/css/publications_detail.css' | relative_url }}" rel="stylesheet">
+</head>
+<div class="container">
+    <div class="content-container">
+
+        <!-- Title -->
+        <div class="title-section text-center">
+            <h1>{{ page.title }}</h1>
+        </div>
+
+        <!-- Author Info -->
+        <div class="author-info table-like">
+            {% for author in page.authors %}
+            <div class="author">
+                <p><a href="{{ author.profile_url | relative_url }}" target="_blank">{{ author.name }}</a></p>
+                <p>{{ author.email }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Publication Site Info -->
+        {% if page.publication_site %}
+        <div class="publication-site-info text-center">
+            <p class="publication-info-text">
+                <a href="{{ page.publication_site.link }}" target="_blank" class="publication-link">
+                    {{ page.publication_site.name }} {{ page.publication_site.year }}
+                </a>
+            </p>
+        </div>
+        {% endif %}
+
+        <!-- Links to Paper, Slides, Video -->
+        <div class="links-section table-like">
+            {% if page.paper_link %}
+            <div class="link">
+                <a href="{{ page.paper_link | relative_url }}" target="_blank">[Paper]</a>
+            </div>
+            {% endif %}
+            {% if page.slides_link %}
+            <div class="link">
+                <a href="{{ page.slides_link | relative_url }}" target="_blank">[Slides]</a>
+            </div>
+            {% endif %}
+            {% if page.video_link %}
+            <div class="link">
+                <a href="{{ page.video_link }}" target="_blank">[Video]</a>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Embedded Video -->
+        {% if page.video_link %}
+        <div class="video-section text-center extra-margin">
+            <iframe src="{{ page.video_link }}" frameborder="0" ></iframe>
+        </div>
+        {% endif %}
+
+        <!-- Divider Before Abstract -->
+        <hr class="custom-divider">
+
+        <!-- Abstract Section -->
+        {% if page.abstract %}
+        <div class="abstract-section">
+            <h3>Abstract</h3>
+            <p>{{ page.abstract }}</p>
+        </div>
+        {% endif %}
+
+        <!-- Image Section -->
+        {% if page.image %}
+        <div class="image-section text-center">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid">
+        </div>
+        {% endif %}
+
+        <!-- Divider Before Conclusion -->
+        <hr class="custom-divider">
+
+        <!-- Conclusion Section -->
+        {% if page.conclusion %}
+        <div class="conclusion-section">
+            <h3>Conclusion</h3>
+            <p>{{ page.conclusion }}</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
