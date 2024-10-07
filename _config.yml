@@ -72,5 +72,5 @@ collections:
     output: true
     permalink: /:path/
 
-baseurl: "/wsub.github.io"  # Set to "" if your site is at the root of the domain
-url: "https://github.com/WS-UB/wsub.github.io.git"  # Replace with your GitHub repository URL
+baseurl: "https://wsub.github.io"  # Set to "" if your site is at the root of the domain
+url: ""  # Replace with your GitHub repository URL
