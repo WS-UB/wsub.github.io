@@ -30,7 +30,8 @@ nav .container {
 
 nav .logo {
     display: flex;
-    align-items: center;
+    align-items:center;
+    
 }
 
 nav .logo a{
@@ -38,7 +39,7 @@ nav .logo a{
 }
 
 nav .logo img.ub-logo {
-    display: center;  
+  
     height: 40px;
     margin-right: 10px;
     min-height: 40px;  /* Ensure height stays consistent */

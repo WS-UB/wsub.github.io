@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-top: 0;
+    
 }
 
 body {
@@ -11,8 +11,12 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+    
 }
-
+/*logo */
+nav .logo img.ub-logo {
+    margin-bottom: 16px;
+}
 
 /* Carousel Section */
 .carousel-container {
