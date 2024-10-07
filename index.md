@@ -1,6 +1,6 @@
 ---
 layout: index
-title: "Generic Research Lab Template - Home"
+title: "home"
 carousel: true
 permalink: /
 carousel_images:
